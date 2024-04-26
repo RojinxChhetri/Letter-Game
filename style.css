@@ -1,0 +1,125 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #03141c; /* Dark background */
+}
+
+.game-container {
+  text-align: center;
+  background-color: #022034; /* Slightly lighter dark background for the container */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5); /* Stronger shadow for depth */
+  color: #f5f5dc; /* Creamy text color */
+  transition: all 0.3s ease; /* Smooth transition for the container */
+}
+
+.game-container:hover {
+  transform: translateY(-5px); /* Gentle hover effect for the container */
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: #f5f5dc; /* Creamy color for the title */
+}
+
+#score, #timer {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #f5f5dc; /* Creamy color for score and timer */
+}
+
+#letters-container {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #f5f5dc; /* Creamy color for the letters */
+}
+
+#input-field {
+  font-size: 1em;
+  padding: 10px 15px; /* Increased padding for a more spacious feel */
+  margin-bottom: 15px; /* More space below the input field */
+  background-color: #decbcb; /* Lighter background for softness */
+  color: #333; /* Darker text for better readability */
+  border: 2px solid #a6a6a6; /* Softer border color */
+  border-radius: 10px; /* Rounded corners for a softer look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: all 0.3s ease; /* Smooth transition for interactions */
+}
+
+#input-field:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #4a90e2; /* Highlight color for focus */
+  box-shadow: 0 0 10px #4a90e2; /* Subtle glow effect on focus */
+}
+
+#start-button {
+  font-size: 1em;
+  padding: 10px 20px;
+  background-color: #28a745; /* Green background */
+  color: #ffffff;
+  border: none;
+  border-radius: 20px; /* Rounded edges like in the screenshot */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Soft transitions for the button */
+}
+
+#start-button:hover {
+  background-color: #2ea043; /* Lighter green on hover */
+  transform: translateY(-2px); /* Raise button on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+#notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  background: #21262d; /* Dark background for notification */
+  border-left: 3px solid #58a6ff; /* Blue border */
+  color: #f5f5dc; /* Creamy text color */
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease, top 0.3s ease; /* Soft transitions for notification */
+}
+
+#notification.show {
+  opacity: 1;
+  top: 30px; /* Slightly move down when showing notification for smooth effect */
+}
+
+
+#difficulty-select {
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #03314b;
+  color: #f5f5dc;
+  border: 2px solid #0366d6;
+}
+
+#leaderboard {
+  margin-top: 20px;
+  text-align: left;
+}
+
+#leaderboard h3 {
+  color: #f5f5dc;
+}
+
+#leaderboard-list {
+  list-style-type: none;
+  padding: 0;
+  color: #f5f5dc;
+}
+
+
+@media (max-width: 600px) {
+  .game-container {
+    width: 90%;
+  }
+}
